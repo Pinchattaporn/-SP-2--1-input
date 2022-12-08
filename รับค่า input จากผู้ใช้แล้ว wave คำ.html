@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>รับค่า Input</title>
+    <meta charset=" UTF-8">
+    <script type="text/javascript">
+        function wave() {
+            var n =prompt('กรอกตัวอักษร')
+        if (n.length > 10){
+            let arrWord = []
+            
+            for (var x in n){
+                let str = ''
+                for(var a in n){
+                    if (x == a) str += n[x].toUpperCase()
+                    else str += n[x]
+                }
+                arrWord.push(str)
+            }
+            console.log(arrWord)
+        }
+        }
+        wave()
+</script>
+    
+</head>
+
+<body>
+</body>
+
+</html>
